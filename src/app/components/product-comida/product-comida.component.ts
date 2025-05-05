@@ -95,7 +95,7 @@ export class ProductComidaComponent {
       "nombre": "Nuggets de pollo",
       "precio": 4.99,
       "ingredientes": "pollo empanizado, salsa BBQ o mostaza",
-      "imagen":"assets/nugets.png"},
+      "imagen":"assets/nugets.webp"},
     {
       "id": 14,
       "nombre": "Pollo frito",
@@ -131,7 +131,7 @@ export class ProductComidaComponent {
       "nombre": "Wrap de pollo",
       "precio": 6.50,
       "ingredientes": "tortilla, pollo, lechuga, tomate, aderezo ranch",
-      "imagen":"assets/wrap_pollo.png"},
+      "imagen":"assets/wrap_pollo.webp"},
     {
       "id": 20,
       "nombre": "Wrap vegetariano",
@@ -149,7 +149,7 @@ export class ProductComidaComponent {
       "nombre": "Empanada de carne",
       "precio": 2.50,
       "ingredientes": "masa frita, carne molida, cebolla, ajo",
-      "imagen":"assets/empanada_carne.png"},
+      "imagen":"assets/empanada_carne.webp"},
     {
       "id": 23,
       "nombre": "Choripán",
@@ -191,6 +191,6 @@ export class ProductComidaComponent {
       "nombre": "Refresco grande",
       "precio": 2.50,
       "ingredientes": "agua carbonatada, azúcar, saborizante",
-        "imagen":"assets/refresco_grande.png"}
+        "imagen":"assets/refresco_grande.webp"}
 ];
 }

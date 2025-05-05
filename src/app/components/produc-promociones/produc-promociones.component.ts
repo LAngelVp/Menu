@@ -10,9 +10,9 @@ import { CommonModule } from '@angular/common'; // Importar CommonModule
 })
 export class ProducPromocionesComponent {
   promociones = [
-    { id: 1, imagen: 'assets/promocion1.png', descripcion: '¡Oferta especial en hamburguesas!' },
-    { id: 2, imagen: 'assets/promocion2.png' , descripcion: '30% de descuento en pizzas de pepperoni' },
-    { id: 3, imagen: 'assets/promocion3.png', descripcion: 'Alitas de cualquier especialidad' },
+    { id: 1, imagen: 'assets/promocion1.webp', descripcion: '¡Oferta especial en hamburguesas!' },
+    { id: 2, imagen: 'assets/promocion2.webp' , descripcion: '30% de descuento en pizzas de pepperoni' },
+    { id: 3, imagen: 'assets/promocion3.webp', descripcion: 'Alitas de cualquier especialidad' },
   ];
 
   currentIndex: number = 0;
