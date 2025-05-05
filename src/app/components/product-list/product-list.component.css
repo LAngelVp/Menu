@@ -1,0 +1,16 @@
+.btn_comida{
+    background: #f4d03f;
+    padding: 2px 7px;
+    border-radius: 10px;
+    border: solid 2px #9a7d0a;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_comida:hover{
+    background: #b0962e;
+}
+.btn_comida:active{
+    background: #867840;
+}

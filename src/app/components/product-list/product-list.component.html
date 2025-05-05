@@ -1,0 +1,35 @@
+<div>
+  <app-produc-promociones></app-produc-promociones>
+    <div class="max-w-7xl mx-auto px-4 py-5">
+      <div class="w-full flex justify-center items-center py-5 space-x-4">
+        <!-- Botón Comida -->
+        <button
+          class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          (click)="onSelect('comida')"
+        >
+          Comida
+        </button>
+        <!-- Botón Bebidas -->
+        <button
+          class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
+          (click)="seleccionado = 'bebidas'"
+        >
+          Bebidas
+        </button>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          (click)="seleccionado = 'bebidas-alcoholicas'"
+        >
+          Bebidas Alcohólicas
+        </button>
+      </div>
+  
+      <!-- Mostrar componente dinámicamente -->
+      <div class="mt-5">
+        <app-product-comida *ngIf="seleccionado === 'comida'"></app-product-comida>
+        <app-product-bebida *ngIf="seleccionado === 'bebidas'"></app-product-bebida>
+        <app-product-bebida-alcohol *ngIf="seleccionado === 'bebidas-alcoholicas'"></app-product-bebida-alcohol>
+      </div>
+    </div>
+  </div>
+  

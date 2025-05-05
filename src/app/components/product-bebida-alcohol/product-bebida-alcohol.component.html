@@ -1,0 +1,17 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div
+      *ngFor="let product of lista_bebidas_alcoholicas; let i = index"
+      class="max-w-sm rounded overflow-hidden shadow-lg bg-white opacity-0 animate-fade-up"
+      [ngStyle]="{
+        'animation-delay': (i * 100) + 'ms',
+        'animation-fill-mode': 'forwards'
+      }"
+    >
+      <img class="w-full h-56 object-cover" [src]="product.imagen" alt="Imagen" />
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{{ product.nombre }}</div>
+        <cite class="opacity-75 font-bold">${{ product.precio }}</cite>
+        <p class="text-gray-700 text-base">{{ product.ingredientes }}</p>
+      </div>
+    </div>
+  </div>

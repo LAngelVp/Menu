@@ -1,0 +1,18 @@
+/* Estilo general para el carrusel */
+.relative {
+    position: relative;
+  }
+  
+  /* Estilo para los botones de navegación */
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Imagen dentro del carrusel */
+  /* img {
+    border-radius: 0.5rem;
+  } */
