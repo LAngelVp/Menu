@@ -1,46 +1,46 @@
 <div class="relative w-full mx-auto overflow-hidden shadow-2xl">
-    <!-- Carrusel de Promociones -->
-    <div class="relative w-full">
-      <!-- Contenedor deslizable -->
+  <!-- Carrusel de Promociones -->
+  <div class="relative w-full">
+    <!-- Contenedor deslizable -->
+    <div
+      class="flex transition-transform duration-700 ease-in-out"
+      [ngStyle]="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }"
+    >
       <div
-        class="flex transition-transform duration-700 ease-in-out"
-        [ngStyle]="{ transform: 'translateX(' + (-currentIndex * 100) + '%)' }"
+        *ngFor="let promo of promociones"
+        class="flex-none w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[600px] relative"
       >
+        <!-- Imagen -->
+        <img
+          [src]="promo.imagen"
+          alt="Promoción"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+
+        <!-- Descripción elegante -->
         <div
-          *ngFor="let promo of promociones"
-          class="flex-none w-full h-[300px] sm:h-[400px] md:h-[400px] lg:h-[500px] relative"
+          class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white px-6 py-4"
         >
-          <!-- Imagen -->
-          <img
-            [src]="promo.imagen"
-            alt="Promoción"
-            class="w-full h-full object-cover"
-          />
-  
-          <!-- Descripción elegante -->
-          <div
-            class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white px-6 py-4"
-          >
-            <h3 class="text-2xl sm:text-3xl font-semibold drop-shadow-lg">
-              {{ promo.descripcion }}
-            </h3>
-          </div>
+          <h3 class="text-2xl sm:text-3xl font-semibold drop-shadow-lg">
+            {{ promo.descripcion }}
+          </h3>
         </div>
       </div>
-  
-      <!-- Botones de navegación -->
-      <button
-        (click)="prev()"
-        class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 sm:p-4 rounded-full shadow-lg transition duration-300"
-      >
-        &#60;
-      </button>
-      <button
-        (click)="next()"
-        class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 sm:p-4 rounded-full shadow-lg transition duration-300"
-      >
-        &#62;
-      </button>
     </div>
+
+    <!-- Botones de navegación -->
+    <button
+      (click)="prev()"
+      class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 sm:p-4 rounded-none shadow-lg transition duration-300"
+    >
+      &#60;
+    </button>
+    <button
+      (click)="next()"
+      class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 sm:p-4 rounded-none shadow-lg transition duration-300"
+    >
+      &#62;
+    </button>
   </div>
-  
+</div>
