@@ -20,9 +20,9 @@ export class ProducPromocionesComponent implements OnInit {
   ];
 
   promociones_movil = [
-    { id: 1, imagen: 'assets/promocion1p.webp', descripcion: '¡Oferta especial (móvil)!' },
-    { id: 2, imagen: 'assets/promocion2p.webp', descripcion: 'Descuento exclusivo en móvil' },
-    { id: 3, imagen: 'assets/promocion3p.webp', descripcion: 'Alitas de cualquier especialidad' },
+    { id: 1, imagen: 'assets/Alitas.webp', descripcion: '¡Oferta especial (móvil)!' },
+    { id: 2, imagen: 'assets/DISFRUTAYA.webp', descripcion: 'Descuento exclusivo en móvil' },
+    { id: 3, imagen: 'assets/PIZZAPEPPERONI.webp', descripcion: 'Alitas de cualquier especialidad' },
   ];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
